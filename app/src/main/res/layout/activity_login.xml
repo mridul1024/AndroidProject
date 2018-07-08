@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/bgpage">
+
+    <ImageView
+        android:id="@+id/imageViewHeaderLogo"
+        android:layout_width="164dp"
+        android:layout_height="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginTop="107dp"
+        android:background="@drawable/logo_and_header" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/inputfieldloginpage"
+        android:hint="@string/username"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_height="43dp"
+        android:layout_width="252dp"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/inputfieldloginpage"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_height="33dp"
+       android:layout_width="34.3dp"
+        android:background="@drawable/loginbtn"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewSignUpContext"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/login_context"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_height="35dp"
+        android:layout_width="81dp"
+        android:background="@drawable/signupbtn"
+        android:layout_below="@+id/textViewSignUpContext"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

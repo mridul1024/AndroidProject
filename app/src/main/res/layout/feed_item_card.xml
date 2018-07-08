@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feedItemRelativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="267dp"
+        android:layout_height="222dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/postbg"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/postUserimageBtn"
+            android:layout_width="31dp"
+            android:layout_height="32dp"
+            android:background="@android:drawable/sym_def_app_icon" />
+
+        <TextView
+            android:id="@+id/postContextTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/postUserimageBtn"
+            android:text="@string/post_context"
+            android:textColor="#000000"
+            android:textSize="7sp" />
+
+        <TextView
+            android:id="@+id/postTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/likeenclosure"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/postContextTextView"
+            android:text="@string/post_time"
+            android:textColor="#000000"
+            android:textSize="7sp" />
+
+        <TextView
+            android:id="@+id/postUsernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/postContextTextView"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/postUserimageBtn"
+            android:text="@string/username"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/postDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/postUsernameTextView"
+            android:layout_marginLeft="120dp"
+            android:layout_toRightOf="@+id/postUsernameTextView"
+            android:text="@string/post_date"
+            android:textColor="#000000"
+            android:textSize="7sp" />
+
+        <Button
+            android:id="@+id/postChildImage"
+            android:layout_width="267dp"
+            android:layout_height="151dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/postUserimageBtn"
+            android:background="@drawable/imagebtn"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/likeContextTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/postChildImage"
+            android:text="@string/like_context"
+            android:textColor="#000000"
+            android:textSize="6sp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/likeNumber"
+            android:background="@drawable/likeenclosure"
+            android:layout_width="12dp"
+            android:layout_height="30dp"
+            android:text="@string/like_number"
+            android:textSize="7sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/postChildImage"
+            android:layout_toRightOf="@+id/likeContextTextView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/likeBtn"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:background="@drawable/likebtn"
+            android:layout_toRightOf="@+id/likeNumber"
+            android:layout_below="@+id/postChildImage"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
